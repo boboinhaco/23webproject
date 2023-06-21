@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오늘의 영화</title>
+    <style>
+        h1 { 
+             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+             text-align: center;
+             border: solid;
+             border-radius: 30px;
+             border-color: rgb(141, 194, 238);
+             border-width: 5px 5px;
+             width: 800px;
+             padding: 40px;
+             margin: auto;
+             background-image: url("../2023\ Project/image/sky.jpg");
+             background-size: 1200px;
+             background-repeat: no-repeat; 
+             background-position: center top;
+             background-attachment: scroll; 
+        } /* 배경 지정 */
+
+        ul { /* 드롭 다운 메뉴 만들기*/
+            list-style-type: none;
+            margin: 500;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(128, 179, 229);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-attachment: scroll;
+            display: inline-block;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 15px 25px;
+            text-decoration: none;
+        }
+
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: rgb(148, 131, 192);
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute; /*다른 명령어는 그 메뉴 색이 밑으로 내려옴*/
+            background-color: rgb(225, 240, 255);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a { /* 드롭다운에 표시되는 애들 설정*/
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .dropdown-content a:hover {
+            background-color: antiquewhite;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .footer { /*맨 밑의 주석 느낌*/
+            background-color: rgb(225, 240, 255);
+            padding: 10px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        table, th, td { /*테이블 정보*/
+            border:solid lightskyblue;
+            border-collapse: collapse;
+            padding: 10px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="font-size:50px;"> TODAY'S MOVIE </h1>
+    <ul>
+        <li><a href="../2023 Project/test.html">HOME</a></li>
+        <li><a href="../2023 Project/movie.html">MOVIE</a></li>
+        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">DROPDOWN</a>
+            <div class="dropdown-content">
+                <a href="http://disneyplus.com" target="_blank">DISNEY+</a>
+                <a href="http://netflix.com" target="_blank">NETFLIX</a>
+                <a href="http://youtube.com" target="_blank">YOUTUBE</a>
+            </div>
+        </li>
+    </ul>
+    <center>
+        <h2 style="font-size:25px;">Cruella</h2>
+        <img src="../2023 Project/image/cruella.jpg" display:block
+         alt="movie cruella poster" style="width:300px;height:500px;">
+        <table style="width:70%">
+            <tr>
+                <th>장르</th>
+                <th>감독</th>
+                <th>상영시간</th>
+                <th>개봉일</th>
+                <th>평점</th>
+            </tr>
+            <tr>
+                <th>드라마</th>
+                <th>크레이그 질레스피</th>
+                <th>133분</th>
+                <th>2021.05.26</th>
+                <th>9.22점</th>
+            </tr>
+        </table>
+        <br><br><br><br><br>
+
+        <h3 style="font-size:25px;">Aladdin</h3>
+        <img src="../2023 Project/image/aladdin.jpg" display:block
+         alt="movie aladdin poster" style="width:300px;height:500px;">
+         <table style="width:70%">
+            <tr>
+                <th>장르</th>
+                <th>감독</th>
+                <th>상영시간</th>
+                <th>개봉일</th>
+                <th>평점</th>
+            </tr>
+            <tr>
+                <th>모험</th>
+                <th>가이 리치</th>
+                <th>128분</th>
+                <th>2019.05.23</th>
+                <th>9.41점</th>
+            </tr>
+        </table>
+        <br><br><br><br><br>
+
+        <h4 style="font-size:25px;">Spiderman</h4>
+        <img src="../2023 Project/image/spiderman.jpg" display:block
+         alt="movie spiderman poster" style="width:300px;height:500px;">
+         <table style="width:70%">
+            <tr>
+                <th>장르</th>
+                <th>감독</th>
+                <th>상영시간</th>
+                <th>개봉일</th>
+                <th>평점</th>
+            </tr>
+            <tr>
+                <th>액션</th>
+                <th>존 왓츠</th>
+                <th>148분</th>
+                <th>2021.12.15</th>
+                <th>9.09점</th>
+            </tr>
+        </table>
+        <br><br><br><br><br>
+
+        <h5 style="font-size:25px;">Toystory 4</h5>
+        <img src="../2023 Project/image/toystory.jpg" display:block
+         alt="movie toystory poster" style="width:300px;height:500px;">
+         <table style="width:70%">
+            <tr>
+                <th>장르</th>
+                <th>감독</th>
+                <th>상영시간</th>
+                <th>개봉일</th>
+                <th>평점</th>
+            </tr>
+            <tr>
+                <th>애니메이션</th>
+                <th>조시 쿨리</th>
+                <th>100분</th>
+                <th>2019.06.20</th>
+                <th>9.23점</th>
+            </tr>
+        </table>
+        <br><br><br><br><br>
+        
+        <h6 style="font-size:25px;">Zootropolis</h6>
+        <img src="../2023 Project/image/zootropolis.jpeg" display:block
+         alt="movie zootropolis poster" style="width:300px;height:500px;">
+         <table style="width:70%">
+            <tr>
+                <th>장르</th>
+                <th>감독</th>
+                <th>상영시간</th>
+                <th>개봉일</th>
+                <th>평점</th>
+            </tr>
+            <tr>
+                <th>애니메이션</th>
+                <th>바이론 하워드</th>
+                <th>108분</th>
+                <th>2016.02.17</th>
+                <th>9.33점</th>
+            </tr>
+        </table>
+        <br><br><br><br><br>
+    </center>
+
+    <div class="footer">
+        <p>청운대학교 컴퓨터공학과 최인서</p>
+    </div>
+</body>
+</html>
